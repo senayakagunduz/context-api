@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import ThemeContext from '../context/ThemeContext'
 
-const Button = () => {
+const Header = () => {
     const {theme,setTheme}=useContext(ThemeContext);
   return (
     <div className='header'>
@@ -11,4 +11,4 @@ const Button = () => {
   )
 }
 
-export default Button
+export default Header
