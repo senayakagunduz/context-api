@@ -1,5 +1,15 @@
-.App {
+.app{
   text-align: center;
+  height: 100vh;
+
+}
+.dark {
+  background-color: #282c34;
+  color:#fff;
+}
+.light{
+  background-color: aliceblue;
+  color:#282c34;
 }
 
 .App-header {
