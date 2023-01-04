@@ -3,6 +3,7 @@ import '../App.css'
 import Header from './Header'
 import Button from './Button'
 import ThemeContext from '../context/ThemeContext'
+import Profile from './Profile'
 const Container = () => {
     const {theme}=useContext(ThemeContext);
   return (
@@ -10,6 +11,8 @@ const Container = () => {
         <Header/>
         <br/>
         <Button/>
+        <br/>
+        <Profile/>
     </div>
   )
 }
