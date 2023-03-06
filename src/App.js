@@ -1,17 +1,14 @@
-import './App.css';
-import Container from './components/Container';
-import {ThemeProvider} from './context/ThemeContext';
-import { UserProvider } from './context/UserContext';
+import "./App.css";
+import { useState } from "react";
+import SiteProvider from "./context/SiteContext";
+import Home from "./components/Home";
 
 function App() {
+  
   return (
-    <div className="App">
-      <ThemeProvider value="dark">
-        <UserProvider>
-          <Container/>
-        </UserProvider>
-      </ThemeProvider>
-    </div>
+    <SiteProvider>
+      <Home />
+    </SiteProvider>
   );
 }
 
